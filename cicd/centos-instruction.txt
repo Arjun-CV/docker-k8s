@@ -84,3 +84,10 @@ kubectl delete deploy --all
 kubectl create -f deploy-tomcat.yaml
 ##########################################################################
 
+list pod
+
+curl http://<pod ip>:8080/HelloWorld-0.0.1-SNAPSHOT/index.jsp
+
+
+
+
