@@ -56,8 +56,10 @@ Login to Jenkins
 
 On the terminal
 	sudo su
-	mv /var/lib/jenkins/.kube/config /home #this may fail if you haven't execute jenkins till kubectl at least once
-	cp /home/<user>/config /var/lib/jenkins/.kube/
+	## mv /var/lib/jenkins/.kube/config /home #this may fail if you haven't execute jenkins till kubectl at least once
+	## cp /home/<user>/config /var/lib/jenkins/.kube/
+	cp -r /home/vagrant/.kube /var/lib/jenkins
+
 	restart jenkins
 	systemctl restart jenkins
 	
